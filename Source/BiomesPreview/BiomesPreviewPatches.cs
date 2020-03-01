@@ -12,19 +12,22 @@ namespace BiomesPreview
     [StaticConstructorOnStartup]
     public static class BiomesPreviewPatches
     {
-        public const string Id = "rimworld.biomes.core";
-        public const string Name = "Biomes! Core";
-        public static string Version = (Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(), typeof(AssemblyInformationalVersionAttribute)) as AssemblyInformationalVersionAttribute).InformationalVersion;
+        //public const string Id = "rimworld.biomes.core";
+        //public const string Name = "Biomes! Core";
+        //public static string Version = (Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(), typeof(AssemblyInformationalVersionAttribute)) as AssemblyInformationalVersionAttribute).InformationalVersion;
 
         static BiomesPreviewPatches()
         {
-            HarmonyInstance.Create(Id).PatchAll();
-            Log("Initialized");
+            HarmonyInstance harmony = HarmonyInstance.Create("rimworld.biomespreview");
+            //HarmonyInstance.Create(Id).PatchAll();
+            harmony.PatchAll();
+            Log.Message("Biomes! Preview initialized");
+            //Log("Initialized");
         }
 
-        public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));
+        //public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));
 
-        private static string PrefixMessage(string message) => $"[{Name} v{Version}] {message}";
+        //private static string PrefixMessage(string message) => $"[{Name} v{Version}] {message}";
     }
 
 
@@ -36,7 +39,7 @@ namespace BiomesPreview
         {
             var world = Traverse.Create(__instance);
             WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-            if (worldGrid[tileID].biome.defName.Contains("NoBeach"))
+            if (worldGrid[tileID].biome.defName == "BiomesPreview_Atoll")
             {
                 __result = Rot4.Invalid;
                 return false;
@@ -53,7 +56,7 @@ namespace BiomesPreview
         {
             var world = Traverse.Create(__instance);
             WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-            if (worldGrid[tile].biome.defName == "BiomesIslands_Atoll_NoBeach")
+            if (worldGrid[tile].biome.defName == "BiomesPreview_Atoll")
             {
                 List<ThingDef> rocks = new List<ThingDef>() { BiomesPreviewDefOf.BiomesIslands_CoralRock };
                 __result = rocks;

@@ -28,11 +28,13 @@ namespace BiomesPreview
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            if(!(map.Biome.defName != "BiomesPreview_Atoll"))
+            Log.Message("Found the atoll maker");
+            if(!(map.Biome.defName == "BiomesPreview_Atoll"))
             {
                 return;
             }
-            
+            Log.Message("Running atoll maker");
+
             MapGenFloatGrid fertility = MapGenerator.Fertility;
 
             // make ellipse centered on the map's center. Smaller maps get smaller ellipses
