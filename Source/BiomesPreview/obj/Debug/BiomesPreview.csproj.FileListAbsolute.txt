@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\bin\Debug\BiomesPreview.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\bin\Debug\BiomesPreview.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\bin\Debug\0Harmony.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\obj\Debug\BiomesPreview.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\obj\Debug\BiomesPreview.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\obj\Debug\BiomesPreview.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Source\BiomesPreview\obj\Debug\BiomesPreview.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RWB_Atolls\Assemblies\BiomesPreview.dll
