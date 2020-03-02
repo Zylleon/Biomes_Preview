@@ -25,7 +25,6 @@ namespace BiomesPreview
             //Log("Initialized");
         }
 
-        //public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));
 
         //private static string PrefixMessage(string message) => $"[{Name} v{Version}] {message}";
     }

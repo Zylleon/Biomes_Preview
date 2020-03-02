@@ -28,12 +28,10 @@ namespace BiomesPreview
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            Log.Message("Found the atoll maker");
             if(!(map.Biome.defName == "BiomesPreview_Atoll"))
             {
                 return;
             }
-            Log.Message("Running atoll maker");
 
             MapGenFloatGrid fertility = MapGenerator.Fertility;
 

@@ -21,14 +21,10 @@ namespace BiomesPreview
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            Log.Message("Found deep ore maker");
-
             if (!map.TileInfo.WaterCovered)
             {
                 return;
             }
-
-            Log.Message("Running deep ore maker");
 
             int num = base.CalculateFinalCount(map);
 

@@ -28,8 +28,6 @@ namespace BiomesPreview
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            Log.Message("Making rock chunks for atolls");
-
             this.freqFactorNoise = new Perlin(0.014999999664723873, 2.0, 0.5, 6, Rand.Range(0, 999999), QualityMode.Medium);
             this.freqFactorNoise = new ScaleBias(1.0, 1.0, this.freqFactorNoise);
             NoiseDebugUI.StoreNoiseRender(this.freqFactorNoise, "rock_chunks_freq_factor");
