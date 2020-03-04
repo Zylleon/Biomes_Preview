@@ -22,7 +22,14 @@
 -->
 
   <description>
-Stand-alone playable preview for Biomes! Islands. Supports 1.0 only.
+This is a standalone playable preview of the atoll biome from the upcoming Biomes! Islands mod.
+This preview is for 1.0 only, but the full release will be for 1.1 only. The preview will not be updated for 1.1
+
+Included are the basic atoll biome, new plants and animals, and a unique terrain for the lagoon.
+
+This preview does not contain the full features planned for Islands, but instead contains a pre-release version of the atoll biome in a playable state.
+
+This version will not see significant support, and very few updates. Main development is going towards the full release of Islands.
 
 Compatible with:
 FishIndustry

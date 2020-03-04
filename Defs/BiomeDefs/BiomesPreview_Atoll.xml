@@ -11,7 +11,7 @@
   <BiomeDef>    <!-- Atoll -->
     <defName>BiomesPreview_Atoll</defName>
     <label>atoll</label>
-    <description>A living island made of corals in the form of a semicircular island with a shallow lagoon in the middle. Abundant wild food, relatively small and rare predators, and rich soil deposits make surviving with a small colony a breeze, but building space is at a premium.</description>
+    <description>A living island made of corals in the form of a semicircular island with a shallow lagoon in the middle. Abundant wild food, relatively small and rare predators, and warm winters make surviving with a small colony a breeze, but building space is at a premium.</description>
     <workerClass>BiomesPreview.BiomeWorker_Atoll</workerClass>
 	<!--
 	<modExtensions>
@@ -160,6 +160,7 @@
 		<BiomesIslands_KiwiBird>1.0</BiomesIslands_KiwiBird>
 		<BiomesIslands_Flamingo>0.8</BiomesIslands_Flamingo>
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
+		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
 		<Tortoise>0.5</Tortoise>
 		
 		
