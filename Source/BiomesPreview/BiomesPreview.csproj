@@ -35,7 +35,7 @@
       <HintPath>packages\Lib.Harmony.1.2.0.1\lib\net35\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\..\..\..\Users\brian\Documents\Rimworld Mods\1-0 assemblies\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\1-0Assemblies\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -45,7 +45,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\..\..\..\Users\brian\Documents\Rimworld Mods\1-0 assemblies\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\1-0Assemblies\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using Harmony;
+using RimWorld;
 using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
@@ -30,22 +31,36 @@ namespace BiomesPreview
     }
 
 
-    [HarmonyPatch(typeof(World), nameof(World.CoastDirectionAt))]
-    internal static class World_NoBeachBiomes
+    [HarmonyPatch(typeof(BeachMaker), nameof(BeachMaker.Init))]
+    internal static class BeachMaker_NoBeach
     {
-        // from RF-Archipelagos
-        internal static bool Prefix(int tileID, ref Rot4 __result, ref World __instance)
+        internal static bool Prefix(Map map)
         {
-            var world = Traverse.Create(__instance);
-            WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-            if (worldGrid[tileID].biome.defName == "BiomesPreview_Atoll")
+            if (map.Biome.defName == "BiomesPreview_Atoll")
             {
-                __result = Rot4.Invalid;
                 return false;
             }
             return true;
         }
     }
+
+
+    //[HarmonyPatch(typeof(World), nameof(World.CoastDirectionAt))]
+    //internal static class World_NoBeachBiomes
+    //{
+    //    // from RF-Archipelagos
+    //    internal static bool Prefix(int tileID, ref Rot4 __result, ref World __instance)
+    //    {
+    //        var world = Traverse.Create(__instance);
+    //        WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
+    //        if (worldGrid[tileID].biome.defName == "BiomesPreview_Atoll")
+    //        {
+    //            __result = Rot4.Invalid;
+    //            return false;
+    //        }
+    //        return true;
+    //    }
+    //}
 
 
     [HarmonyPatch(typeof(World), nameof(World.NaturalRockTypesIn))]
